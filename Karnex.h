@@ -11,11 +11,11 @@
 #define _KARNEX_H
 
 
-#include Instrument.h
-#include InstrumentView.h
-#include Oscillator.h
-#include Knob.h
-//#include (Oscillator Chooser thang, whether it be buttons or whatever)
+#include "Instrument.h"
+#include "InstrumentView.h"
+#include "Oscillator.h"
+#include "Knob.h"
+#include "pixmap_button.h"
 
 class Karnex : public Instument
 {
