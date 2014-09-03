@@ -15,6 +15,22 @@
 #include Karnex.h
 //<Include other needed .h files>
 
+extern "C"
+{
+  Plugin::Descriptor PLUGIN_EXPORT karnex_plugin_descriptor =
+  {
+    STRINGIFY( PLUGIN_NAME ),
+    "Karnex",
+    QT_TRANSLATE_NOOP( "pluginBrowser", "Dubstep Growl Synthesizer" ),
+    //"Andreas Brandmaier <andreas/at/brandmaier/dot/de>",            //Is this the author?
+    "Ian Sannar <ian/dot/sannar/at/gmail/dot/com",                    //Assuming so, adding myself.
+    0x0100,
+    Plugin::Instrument,
+    new PluginPixmapLoader( "logo" ),
+    NULL,
+    NULL
+  };
+}
 
 //TODO: Note Processing
 
